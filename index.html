@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./Assets/CSS/Reset.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <link rel="stylesheet" href="./Assets/CSS/Bootstrap.css">
+    <link rel="stylesheet" href="./Assets/CSS/Bootstrap-grid.css">
+    <script src="./JS/main.js"></script>
+    <title>HangMan Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col">
+            <div class="row d-flex justify-content-center">
+                <div class="">
+                    <header>
+                        <h1>Guess the correct animal</h1>
+                        <div class="jumbotron d-flex flex-column">
+                            <h1 class="d-flex justify-content-center">Enter a letter</h1>
+                            <hr>
+
+                            <input id="letter" type="text" placeholder="Pick a Letter and press [Enter]">
+                            <br>
+
+
+                            <button type="button" class="btn btn-warning" value="Submit" onclick="Letter()"><strong>Guess A Letter</strong></button>
+                            <hr>
+                            <div class="letters d-flex justify-content-center justify-content-around" />
+                            <button type="button" class="btn btn-dark">A</button>
+                            <button type="button" class="btn btn-dark">B</button>
+                            <button type="button" class="btn btn-dark">C</button>
+                            <button type="button" class="btn btn-dark">D</button>
+                            <button type="button" class="btn btn-dark">E</button>
+                            <button type="button" class="btn btn-dark">F</button>
+                            <button type="button" class="btn btn-dark">G</button>
+                            <button type="button" class="btn btn-dark">H</button>
+                            <button type="button" class="btn btn-dark">I</button>
+                            <button type="button" class="btn btn-dark">J</button>
+                            <button type="button" class="btn btn-dark">K</button>
+                        </div>
+                        <div>
+                            <hr>
+                            <button type="button" class="btn btn-dark">A</button>
+                            <button type="button" class="btn btn-dark">B</button>
+                            <button type="button" class="btn btn-dark">C</button>
+                            <button type="button" class="btn btn-dark">D</button>
+                            <button type="button" class="btn btn-dark">E</button>
+                            <button type="button" class="btn btn-dark">F</button>
+                            <button type="button" class="btn btn-dark">G</button>
+                            <button type="button" class="btn btn-dark">H</button>
+                            <button type="button" class="btn btn-dark">I</button>
+                            <button type="button" class="btn btn-dark">J</button>
+                            <button type="button" class="btn btn-dark">K</button>
+                            <hr>
+                        </div>
+                        <div class="d-flex justify-content-center btn-outline-primary">
+                            <button type="button" class="btn btn-dark">H</button>
+                            <button type="button" class="btn btn-dark">I</button>
+                            <button type="button" class="btn btn-dark">J</button>
+                            <button type="button" class="btn btn-dark">K</button>
+                        </div>
+                </div>
+            </div>
+            <p id="answer"></p>
+            <p id="counter"></p>
+            <p id="stat"></p>
+            <p id="winner"></p>
+        </div>
+        </header>
+    </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
