@@ -12,6 +12,38 @@ var userInput = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 
 var randomAnimal = animalsArray[Math.floor(Math.random() * animalsArray.length)]
 
+$(document).ready(function () {
+
+    
+});
+/*
+$(button).toggle(function () {
+    $(this).onclick($(this).hide());
+});
+
+Start the game
+$("#start").on("keydown", function (event) {
+    if (event.which == 13)
+        alert("Entered!");
+});
+
+$(function () {
+    $("#chkbtn").on('click', function () {
+        $(this).hide();
+        $("#hidden-div").show();
+    });
+});
+*/
+
+
+    //need to make letter buttons hide when they're clicked //
+                                        {
+    //need to make the right numbers append to the answers position and wrong answers disappear and count incorrect guesses//
+ //       $('$userInput').submit(this.value);
+   // });
+
+  
+
 
 
 
@@ -61,9 +93,11 @@ function Letter() {
         }
     }
 }
-//Need to find a way to end this sucker.
-//When the Answer Array = the letters in animalsArray the game will .prompt("you have guess right, you win the game!");
+/*
+Need to find a way to end this sucker.
+When the Answer Array = the letters in animalsArray the game will .prompt("you have guess right, you win the game!");
 function winner() {
   if (answerArray = animalsArray);
   return getElementById("winner").innerHTML = "You guess " + answersArray[i];
-}*/
+}
+*/
