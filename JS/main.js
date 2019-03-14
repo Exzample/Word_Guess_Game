@@ -1,22 +1,78 @@
-var randomAnimal = 0;
-var word = "";
-var numWrong = 0;
-var numRight = 0;
-var animalsLength = 0;
-var numChar = 0;
-
+alert('javascript file loaded');
+var correctAnswer = "";
+var numWrong = 0;//score
+var numRight = 0;//score
+var remainingGuesses = 10;//number of guesses before the game is over
+var totalGuesses = (numWrong + numRight);//adding all guesses to total guesses
+var randomAnimal = "";
+var userGuess = "";
 var animalsArray = ["tiger", "cat", "dog"];
-//put other categories below here:
 
 var userInput = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "Y", "Z"];
+//put other categories below here:
 
-var randomAnimal = animalsArray[Math.floor(Math.random() * animalsArray.length)]
+function getRandomAnimal() {
+    var random = Math.floor(Math.random() * animalsArray.length);
+    var randIndex = Math.floor(rand);
+    return randomAnimal[random];
+}
 
+function printArray(Arr){
+    for(i = 0; i < arr.length; i++){
+        console.log(arr[i]);
+    }
+    console.log("---------")
+};
+
+//I think I may need to convert randomAnimal to string//
+
+
+
+
+
+
+/*
 $(document).ready(function () {
+    //This may help register the user guess
+    this.onkeyup = function(event) {
+    
+            // Captures the key press, converts it to Upper Case, and saves it to a variable.
+            var userGuess = event.key.toUpperCase();
+    
+            // If the letter is h, run the following functions/methods.
+            if (userGuess === randomAnimal) {
+                //Create a global function that takes a letter button and moves it to the game area//
+               userGuess.function that makes the letter button move to the game area();
+              //Create a global function that generates stats on the screen
+              reWriteStats();
+            }
+    
+            // If the letter is not random animal, run the following functions/methods.
+            if (userGuess != randomAnimal) {
+                userGuess.function that hides/crosses out letter from letter buttons();
+                userGuess.function that hangs the man ();
+                reWriteStats();
+                }
+            };
 
     
 });
-/*
+
+
+    //this is a function that will update all stats on the document when 
+    function reWriteStats() {
+        console.log("Make: " + car.make);
+        console.log("Model: " + car.model);
+        console.log("Color:" + car.color);
+        console.log("Mileage: " + car.mileage);
+        console.log("Is Working: " + car.isWorking);
+        console.log("------------------------------");
+    }
+       
+      
+
+
+
 $(button).toggle(function () {
     $(this).onclick($(this).hide());
 });
@@ -33,7 +89,7 @@ $(function () {
         $("#hidden-div").show();
     });
 });
-*/
+
 
 
     //need to make letter buttons hide when they're clicked //
@@ -48,7 +104,7 @@ $(function () {
 
 
 
-/*var animalsArray = ["tiger", "cat", "dog", "parrot", "zebra"];
+var animalsArray = ["tiger", "cat", "dog", "parrot", "zebra"];
 
 //This Chooses a random index number of the animalsArray
 var randomAnimal = animalsArray[Math.floor(Math.random() * animalsArray.length)]
@@ -93,11 +149,10 @@ function Letter() {
         }
     }
 }
-/*
+
 Need to find a way to end this sucker.
 When the Answer Array = the letters in animalsArray the game will .prompt("you have guess right, you win the game!");
 function winner() {
   if (answerArray = animalsArray);
   return getElementById("winner").innerHTML = "You guess " + answersArray[i];
 }
-*/
