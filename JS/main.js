@@ -10,7 +10,7 @@ var blanksAndSuccesses = [];
 var letterGuessed = "";
 var totalGuesses = 9;
 =======
-alert('javascript file loaded');
+
 var correctAnswer = "";
 var numWrong = 0;//score
 var numRight = 0;//score
