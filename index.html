@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./Assets/CSS/Bootstrap.css">
     <link rel="stylesheet" href="./Assets/CSS/Bootstrap-grid.css">
     <script src="./JS/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js""></script>
+    
     <title>HangMan Game</title>
 </head>
 
@@ -21,8 +21,7 @@
     <div class="container">
         <div class="col">
             <div class="row d-flex justify-content-center">
-                <div class="">
-<<<<<<< HEAD
+                
                     <div class="jumbotron d-flex flex-column">
                         <h1 class="d-flex justify-content-center">Enter a letter</h1>
                         <hr>
@@ -30,38 +29,38 @@
                         <h3 id="word-blanks" class="d-flex justify-content-center">_ _ _ _ _ _ _ _ _ </h3>
                         <hr>
                         <div class="letters d-flex justify-content-center justify-content-around" />
-                        <button type="button" class="btn btn-dark">A</button>
-                        <button type="button" class="btn btn-dark">B</button>
-                        <button type="button" class="btn btn-dark">C</button>
-                        <button type="button" class="btn btn-dark">D</button>
-                        <button type="button" class="btn btn-dark">E</button>
-                        <button type="button" class="btn btn-dark">F</button>
-                        <button type="button" class="btn btn-dark">G</button>
-                        <button type="button" class="btn btn-dark">H</button>
-                        <button type="button" class="btn btn-dark">I</button>
-                        <button type="button" class="btn btn-dark">J</button>
-                        <button type="button" class="btn btn-dark">K</button>
+                        <button type="button" class="btn btn-dark letter-button">A</button>
+                        <button type="button" class="btn btn-dark letter-button">B</button>
+                        <button type="button" class="btn btn-dark letter-button">C</button>
+                        <button type="button" class="btn btn-dark letter-button">D</button>
+                        <button type="button" class="btn btn-dark letter-button">E</button>
+                        <button type="button" class="btn btn-dark letter-button">F</button>
+                        <button type="button" class="btn btn-dark letter-button">G</button>
+                        <button type="button" class="btn btn-dark letter-button">H</button>
+                        <button type="button" class="btn btn-dark letter-button">I</button>
+                        <button type="button" class="btn btn-dark letter-button">J</button>
+                        <button type="button" class="btn btn-dark letter-button">K</button>
                     </div>
                     <div>
                         <hr>
-                        <button type="button" class="btn btn-dark">L</button>
-                        <button type="button" class="btn btn-dark">M</button>
-                        <button type="button" class="btn btn-dark">N</button>
-                        <button type="button" class="btn btn-dark">O</button>
-                        <button type="button" class="btn btn-dark">P</button>
-                        <button type="button" class="btn btn-dark">Q</button>
-                        <button type="button" class="btn btn-dark">R</button>
-                        <button type="button" class="btn btn-dark">S</button>
-                        <button type="button" class="btn btn-dark">T</button>
-                        <button type="button" class="btn btn-dark">U</button>
+                        <button type="button" class="btn btn-dark letter-button">L</button>
+                        <button type="button" class="btn btn-dark letter-button">M</button>
+                        <button type="button" class="btn btn-dark letter-button">N</button>
+                        <button type="button" class="btn btn-dark letter-button">O</button>
+                        <button type="button" class="btn btn-dark letter-button">P</button>
+                        <button type="button" class="btn btn-dark letter-button">Q</button>
+                        <button type="button" class="btn btn-dark letter-button">R</button>
+                        <button type="button" class="btn btn-dark letter-button">S</button>
+                        <button type="button" class="btn btn-dark letter-button">T</button>
+                        <button type="button" class="btn btn-dark letter-button">U</button>
                         <hr>
                     </div>
                     <div class="d-flex justify-content-center btn-outline-primary">
-                        <button type="button" class="btn btn-dark">V</button>
-                        <button type="button" class="btn btn-dark">W</button>
-                        <button type="button" class="btn btn-dark">X</button>
-                        <button type="button" class="btn btn-dark">Y</button>
-                        <button type="button" class="btn btn-dark">Z</button>
+                        <button type="data-letter" class="btn btn-dark letter-button">V</button>
+                        <button type="button" class="btn btn-dark letter-button">W</button>
+                        <button type="button" class="btn btn-dark letter-button">X</button>
+                        <button type="button" class="btn btn-dark letter-button">Y</button>
+                        <button type="button" class="btn btn-dark letter-button">Z</button>
                     </div>
                     <div>
                         <hr>
@@ -79,61 +78,29 @@
                         </div>
                         <p id="loss">Losses: </p>
                     </div>
-
-=======
-                    <header>
-                        <h1>Guess the correct animal</h1>
-                        <div class="jumbotron d-flex flex-column">
-                            <h1 class="d-flex justify-content-center">Enter a letter</h1>
-                            <hr>
-
-                            <input id="userInput" type="text" placeholder="Pick a Letter and press [Enter]">
-                            <br>
-
-
-                            <button type="button" class="btn btn-warning" value="Submit" onkeypress="return submit(event)"><strong>Guess A Letter</strong></button>
-                            <hr>
-                            <div class="letters d-flex justify-content-center justify-content-around" />
-                            <button type="button" class="btn btn-dark">A</button>
-                            <button type="button" class="btn btn-dark">B</button>
-                            <button type="button" class="btn btn-dark">C</button>
-                            <button type="button" class="btn btn-dark">D</button>
-                            <button type="button" class="btn btn-dark">E</button>
-                            <button type="button" class="btn btn-dark">F</button>
-                            <button type="button" class="btn btn-dark">G</button>
-                            <button type="button" class="btn btn-dark">H</button>
-                            <button type="button" class="btn btn-dark">I</button>
-                            <button type="button" class="btn btn-dark">J</button>
-                            <button type="button" class="btn btn-dark">K</button>
-                        </div>
-                        <div>
-                            <hr>
-                            <button type="button" class="btn btn-dark">L</button>
-                            <button type="button" class="btn btn-dark">M</button>
-                            <button type="button" class="btn btn-dark">N</button>
-                            <button type="button" class="btn btn-dark">O</button>
-                            <button type="button" class="btn btn-dark">P</button>
-                            <button type="button" class="btn btn-dark">Q</button>
-                            <button type="button" class="btn btn-dark">R</button>
-                            <button type="button" class="btn btn-dark">S</button>
-                            <button type="button" class="btn btn-dark">T</button>
-                            <button type="button" class="btn btn-dark">U</button>
-                            <button type="button" class="btn btn-dark">V</button>
-                            <hr>
-                        </div>
-                        <div class="d-flex justify-content-center btn-outline-primary">
-                            <button type="button" class="btn btn-dark"> W </button>
-                            <button type="button" class="btn btn-dark"> X </button>
-                            <button type="button" class="btn btn-dark"> Y </button>
-                            <button type="button" class="btn btn-dark"> Z </button>
-                        </div>
-                        <br>
-                        <button id="button-clear" class="btn-danger btn-lg" value="clear"><span>clear</span></button>
->>>>>>> 554654d9012e9d527dede8ff4b9e69e018fb4505
                 </div>
             </div>
         </div>
-    </div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"">
+
+    $(document).ready(function () {
+        for (i = 0; i < userInput.length; i++) {
+            var letterBtn = $('.letter-button');
+            letterBtn.attr("data-letter", letters[i]);
+            letterBtn.text(letters[i]);
+            $('#word-blanks').append(letterBtn);
+        }
+    });
+
+    $('.letter-button').on("click", function () {
+        var correctAnswer = $("#word-blanks");
+        correctAnswer.text($(this).attr("data-letter"));
+        $("#display").append(correctAnswer);
+    });
+
+
+</script>
+            
 
 </body>
 

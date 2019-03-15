@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 console.log("Hello World");
 var randomAnimal = 0;
 var word = "";
@@ -9,20 +8,26 @@ var numChar = 0;
 var blanksAndSuccesses = [];
 var letterGuessed = "";
 var totalGuesses = 9;
-=======
-
-var correctAnswer = "";
-var numWrong = 0;//score
-var numRight = 0;//score
-var remainingGuesses = 10;//number of guesses before the game is over
-var totalGuesses = (numWrong + numRight);//adding all guesses to total guesses
-var randomAnimal = "";
-var userGuess = "";
->>>>>>> 554654d9012e9d527dede8ff4b9e69e018fb4505
 var animalsArray = ["tiger", "cat", "dog"];
 
 var userInput = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "Y", "Z"];
 //put other categories below here:
+
+$(document).ready(function(){
+    for (i = 0; i < userInput.length; i++) {
+        var letterBtn = $('<button>');
+        letterBtn.attr("data-letter", letters[i]);
+        letterBtn.text(letters[i]);
+        $('#buttons').append(letterBtn);
+    }
+});
+
+$('.letter-button').on("click", function(){
+    var correctAnswer = $("<div>");
+    correctAnswer.text($(this).attr("data-letter"));
+    $("#display").append(correctAnswer);
+});
+
 
 function getRandomAnimal() {
     var random = Math.floor(Math.random() * animalsArray.length);
@@ -157,14 +162,6 @@ function printArray(Arr){
             submitButton.disabled = false;
             restartButton.style.display = 'none';
 
-<<<<<<< HEAD
-function startGame() {
-    //how many guesses does the user get?
-    totalGuesses = 9;
-
-    //choose random word from array
-    answer = animalsArray[Math.floor(Math.random() * animalsArray.length)];
-=======
             resetSecretWord(secretWords, correctWords);
 
             resetPlayer();
@@ -177,16 +174,12 @@ function startGame() {
             }
             tempArray.length = 0;
         }
->>>>>>> 554654d9012e9d527dede8ff4b9e69e018fb4505
 
     //the Animal is broken into individual letters
     animalsLength = word.split("");
 
     numChar = animalsLength.length;
 
-<<<<<<< HEAD
-    console.log(word);
-=======
 $(document).ready(function () {
     //This may help register the user guess
     this.onkeyup = function(event) {
@@ -263,7 +256,6 @@ var animalsArray = ["tiger", "cat", "dog", "parrot", "zebra"];
 
 //This Chooses a random index number of the animalsArray
 var randomAnimal = animalsArray[Math.floor(Math.random() * animalsArray.length)]
->>>>>>> 554654d9012e9d527dede8ff4b9e69e018fb4505
 
     blanksAndSuccesses = [];
 
@@ -375,21 +367,11 @@ function checkLetters(letter) {
             }
         }
     }
-<<<<<<< HEAD
-    //Need to find a way to end this sucker.
-    //When the Answer Array = the letters in animalsArray the game will .prompt("you have guess right, you win the game!");
-    function winner() {
-      if (answerArray = animalsArray);
-      return getElementById("winner").innerHTML = "You guess " + answersArray[i];
-    }
-    */
-=======
 }
 
 Need to find a way to end this sucker.
-When the Answer Array = the letters in animalsArray the game will .prompt("you have guess right, you win the game!");
+When the Answer Array = the letters in animalsArray the game will .prompt("you have guessed right, you win the game!");
 function winner() {
   if (answerArray = animalsArray);
   return getElementById("winner").innerHTML = "You guess " + answersArray[i];
 }
->>>>>>> 554654d9012e9d527dede8ff4b9e69e018fb4505
