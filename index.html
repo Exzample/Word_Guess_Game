@@ -15,32 +15,30 @@
 <body>
     <header id="header" class="bg-dark d-flex justify-content-center text-white">
         <h1>Guess the correct animal</h1>
+
     </header>
     <div class="container">
+        <span id="document " class="row border border-dark bg-light mt-4 ">
+                    <p id="answer " class="m-2 ">Correct Letters : </p>
+                </span>
+        <span class="row border border-warning bg-light mt-4 ">
+                    <p id="remaining " class="m-2 ">Guesses Remaining : </p>
+                </span>
+        <span class="row border border-dark bg-light mt-4 p4 ">
+                    <p id="stat " class="m-2 ">Stats: </p>
+                </span>
+        <span class="row border border-success bg-light mt-4 ">
+                    <p id="win " class="m-2 ">Wins: </p>
+                </span>
+        <span class="row border border-danger bg-light mt-4 ">
+                    <p id="loss " class="m-2 ">Losses: </p>
+                </span>
         <div class="jumbotron d-flex justify-content-center">
 
             <div id="word_blanks" class="card card-default">
 
-                <img class="card-img-top" src="./Assets/Images/hangman.jpg" style="" " alt="Card image cap ">
-                        <div class="ml-2 stats ">
-                                <hr>
-                                <span id="document " class="row border border-dark bg-light mt-4 ">
-                                    <p id="answer " class="m-2 ">Correct Letters : </p>
-                                </span>
-                                <span class="row border border-warning bg-light mt-4 ">
-                                    <p id="remaining " class="m-2 ">Guesses Remaining : </p>
-                                </span>
-                                <span class="row border border-dark bg-light mt-4 p4 ">
-                                    <p id="stat " class="m-2 ">Stats: </p>
-                                </span>
-                                <span class="row border border-success bg-light mt-4 ">
-                                    <p id="win " class="m-2 ">Wins: </p>
-                                </span>
-                                <span class="row border border-danger bg-light mt-4 ">
-                                    <p id="loss " class="m-2 ">Losses: </p>
-                                </span>
-                       
-                            <h2 class="d-flex justify-content-center bg-light ">_ _ _ _
+                <img class="card-img-top" src="./Assets/Images/hangman.jpg" style="width: auto; height: auto;" " alt="Card image cap ">
+                <h2 class="d-flex justify-content-center bg-light ">_ _ _ _
                                 <!--"_ " * answerArray.length-->
                             </h2>
                             <div class="d-flex justify-content-center bg-light ">
