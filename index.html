@@ -17,79 +17,88 @@
         <h1>Guess the correct animal</h1>
 
     </header>
-    <div class="container">
-        <span id="document " class="row border border-dark bg-light mt-4 ">
+    <div class="container col-12 m-0">
+        <div class="row jumbotron d-flex justify-content-center">
+            <div class="float-left col ml-2 mb-4" style="height: 250px;">
+                <span id="document " class="row border border-dark bg-light mt-4 ">
                     <p id="answer " class="m-2 ">Correct Letters : </p>
                 </span>
-        <span class="row border border-warning bg-light mt-4 ">
+                <span class="row border border-warning bg-light mt-4 ">
                     <p id="remaining " class="m-2 ">Guesses Remaining : </p>
                 </span>
-        <span class="row border border-dark bg-light mt-4 p4 ">
+                <span class="row border border-dark bg-light mt-4 p4 ">
                     <p id="stat " class="m-2 ">Stats: </p>
                 </span>
-        <span class="row border border-success bg-light mt-4 ">
+                <span class="row border border-success bg-light mt-4 ">
                     <p id="win " class="m-2 ">Wins: </p>
                 </span>
-        <span class="row border border-danger bg-light mt-4 ">
+                <span class="row border border-danger bg-light mt-4 ">
                     <p id="loss " class="m-2 ">Losses: </p>
                 </span>
-        <div class="jumbotron d-flex justify-content-center">
+            </div>
 
-            <div id="word_blanks" class="card card-default">
+            <div class="col-6 ml-4 float-right">
 
-                <img class="card-img-top" src="./Assets/Images/hangman.jpg" style="width: auto; height: auto;" " alt="Card image cap ">
-                <h2 class="d-flex justify-content-center bg-light ">_ _ _ _
-                                <!--"_ " * answerArray.length-->
-                            </h2>
-                            <div class="d-flex justify-content-center bg-light ">
-                                <button id="start " type="submit " class="btn btn-outline-primary letter-button col-4 mr-2 ">Start</button>
-                                <button id="reset " type="reset " class="btn btn-info letter-button col-4 ">Reset</button>                 
-                            </div>
-                            <hr> 
-                            <div class="letters d-flex justify-content-center justify-content-around mb-2 "/>
-                            <button type="button " class="btn btn-dark letter-button ">A</button>
-                            <button type="button " class="btn btn-dark letter-button ">B</button>
-                            <button type="button " class="btn btn-dark letter-button ">C</button>
-                            <button type="button " class="btn btn-dark letter-button ">D</button>
-                            <button type="button " class="btn btn-dark letter-button ">E</button>
-                            <button type="button " class="btn btn-dark letter-button ">F</button>
-                            <button type="button " class="btn btn-dark letter-button ">G</button>
-                            <button type="button " class="btn btn-dark letter-button ">H</button>
-                            <button type="button " class="btn btn-dark letter-button ">I</button>
-                            <button type="button " class="btn btn-dark letter-button ">J</button>
-                            <button type="button " class="btn btn-dark letter-button ">K</button>
-                            <button type="button " class="btn btn-dark letter-button ">L</button>
-                            <button type="button " class="btn btn-dark letter-button ">M</button>
-                            <button type="button " class="btn btn-dark letter-button ">N</button>
-                            <button type="button " class="btn btn-dark letter-button ">O</button>
-                            <button type="button " class="btn btn-dark letter-button ">P</button>
-                            <button type="button " class="btn btn-dark letter-button ">Q</button>
-                            <button type="button " class="btn btn-dark letter-button ">R</button>
-                            <button type="button " class="btn btn-dark letter-button ">S</button>
-                            <button type="button " class="btn btn-dark letter-button ">T</button>
-                            <button type="button " class="btn btn-dark letter-button ">U</button>
-                            <button type="data-letter " class="btn btn-dark letter-button ">V</button>
-                            <button type="button " class="btn btn-dark letter-button ">W</button>
-                            <button type="button " class="btn btn-dark letter-button ">X</button>
-                            <button type="button " class="btn btn-dark letter-button ">Y</button>
-                            <button type="button " class="btn btn-dark letter-button ">Z</button>
-                        </div>
+                <div id="word_blanks" class="card card-default mb-4 ">
+
+                    <img class="card-img-top" src="./Assets/Images/hangman.jpg" style="width: auto; height: 275px;margin-bottom: -35px;" alt="Card image cap ">
+                    <h2 class="d-flex justify-content-center bg-light ">_ _ _ _
+                        <!--"_ " * answerArray.length-->
+                    </h2>
+                    <div class="d-flex justify-content-center bg-light ">
+                        <button id="start " type="submit " class="btn btn-outline-primary letter-button col-4 mr-2 ">Start</button>
+                        <button id="reset " type="reset " class="btn btn-info letter-button col-4 ">Reset</button>
+                    </div>
+
+
                 </div>
-            
-               
+                <div class="">
+                    <div class="letters d-flex justify-content-center justify-content-around mb-2 " />
+                    <button type="button " class="btn btn-dark letter-button ml-2">A</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">B</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">C</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">D</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">E</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">F</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">G</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">H</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">I</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">J</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">K</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">L</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">M</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">N</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">O</button>
                 </div>
-            
+                <div class="">
+                    <button type="button " class="btn btn-dark letter-button ml-2">P</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">Q</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">R</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">S</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">T</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">U</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">V</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">W</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">X</button>
+                    <button type="button " class="btn btn-dark letter-button ml-2">Y</button>
+                    <button type="button " class="btn btn-dark letter-button ">Z</button>
+                </div </div>
+            </div>
+
+
         </div>
+
     </div>
-        
-            
-                
-            
-    
-            
+    </div>
+
+
+
+
+
+
     <script type="text/javascript " src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js " "> $(document).ready(function () { for (i = 0; i
-                < userInput.length; i++) { var letterBtn=$ ( '.letter-button'); letterBtn.attr( "data-letter ", letters[i]); letterBtn.text(letters[i]); $( '#word-blanks').append(letterBtn); } }); $( '.letter-button').on( "click ", function () { var correctAnswer=$ (
-                    "#word-blanks "); correctAnswer.text($(this).attr( "data-letter ")); $( "#display ").append(correctAnswer); }); </script>
+                    < userInput.length; i++) { var letterBtn=$ ( '.letter-button'); letterBtn.attr( "data-letter ", letters[i]); letterBtn.text(letters[i]); $( '#word-blanks').append(letterBtn); } }); $( '.letter-button').on( "click ", function () { var correctAnswer=$ (
+                        "#word-blanks "); correctAnswer.text($(this).attr( "data-letter ")); $( "#display ").append(correctAnswer); }); </script>
 
 
 </body>
