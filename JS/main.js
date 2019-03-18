@@ -117,7 +117,9 @@ document.onclick = function(button, event) {
 
     //Runs the code to check for correct guesses
     checkLetters(userGuess);
-}
+    //Run the code that ends each round//
+    roundComplete();
+};
 
 
 
