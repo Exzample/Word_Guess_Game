@@ -26,7 +26,7 @@ var guessesAllowed = 10;
 
 //Create a function to start the game//
 function startGame() {
-    //Reset the counters and arrays at the beginning of each game//
+    //Reset the counters and arrays at the begininig of each game//
     guessesAllowed = 10;
     remainingAndSolvedLetters = [];
     wrongGuesses = [];
@@ -44,11 +44,11 @@ function startGame() {
     }
     console.log(remainingAndSolvedLetters);
     //Prints the number of guesses remaining at the begining of the game//
-   document.getElementById("remaining ").innerHTML = guessesAllowed;
+    document.getElementById("remaining").innerHTML = guessesAllowed;
     //prints blanks in the #word-blanks at the start of the the game//
     document.getElementById("word-blanks").innerHTML = remainingAndSolvedLetters.join(" ");
     //Clears the #wrong guesses from the previous round//
-    document.getElementById("wrong ").innerHTML = wrongGuesses.join(" ");
+    document.getElementById("wrong").innerHTML = wrongGuesses.join(" ");
 }
 
 //CheckLetters() function that takes each user input letter as an arguement//
@@ -82,17 +82,17 @@ function completeGame() {
     console.log("WinCount: " + wins + " | LossCount: " + loss + " | NumGuesses: " + guessesAllowed);
     //Update HTML to reflect the new number of guesses on the page
     //Guesses Remaining are displayed in the #remaining//
-    document.getElementById("remaining ").innerHTML = guessesAllowed;
+    document.getElementById("remaining").innerHTML = guessesAllowed;
     //print remainingAndSolvedLetters and blanks on to page. Word blanks are displayed in the #word-blanks//
     document.getElementById("word-blanks").innerHTML = remainingAndSolvedLetters.join(" ");
     //print wrong guesses on to the page. Remaining guesses display in #wrong .//
-    document.getElementById("wrong ").innerHTML = wrongGuesses.join(" ");
+    document.getElementById("wrong").innerHTML = wrongGuesses.join(" ");
     //Begin logic if user choice = remainingAndSolvedLetters = correct/win//
     if (lettersInComputerSelection.toString() === remainingAndSolvedLetters.toString()){
         wins++;
         alert("You Win!");
         //update html with win//
-        document.getElementById("win ").innerHTML = win;
+        document.getElementById("win").innerHTML = win;
         //Restart the Game//
         startGame();
     }
@@ -103,7 +103,7 @@ function completeGame() {
         //What action do you want to happen when you lose?//
         alert("You Lose!");
         //update HTML//
-        document.getElementById("loss ").innerHTML = loss;
+        document.getElementById("loss").innerHTML = loss;
         //restart the game//
         startGame();
     }
@@ -115,13 +115,13 @@ function completeGame() {
 startGame();
 //Then initiates the function for capturing key events// change this to click events latter
 //You can capture event clicks with "document.onkeyup = function(event) {"//
-//document.onclick = function(button, event) {
-    //converts all keyboard values to lowercase letters//
-    /*userGuess = String.fromCharCode(event.which).toLowerCase();*/
-document.onkeyup = function(event){
+document.onkeyup = function(event) {
+    //converts all button clicks to lowercase letters//
     userGuess = String.fromCharCode(event.which).toLowerCase();
+
     //Runs the code to check for correct guesses
     checkLetters(userGuess);
     //Run the code that ends each round//
     roundComplete();
 };
+
