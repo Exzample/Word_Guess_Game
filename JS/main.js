@@ -19,15 +19,16 @@ var wrongGuesses = [];
 //Create a variable to display stats to the scoreboard//
 var wins = 0;
 var loss = 0;
-var guessesAllowed = 10;
+var guessesAllowed ="You have " + 10 + "guesses left";
 
+// document.getElementById("remaining").innerHTML = "10";
 //var userInput = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "Y", "Z"];
 //put other categories below here:
 
 //Create a function to start the game//
 function startGame() {
     //Reset the counters and arrays at the begininig of each game//
-    guessesAllowed = 10;
+    guessesAllowed = "You have " + 10 + " guesses left";
     remainingAndSolvedLetters = [];
     wrongGuesses = [];
     //Computer chooses a random animal from animalsArray//
@@ -45,9 +46,9 @@ function startGame() {
     console.log(remainingAndSolvedLetters);
     //Prints the number of guesses remaining at the begining of the game//
     document.getElementById("remaining").innerHTML = guessesAllowed;
-    //prints blanks in the #word-blanks at the start of the the game//
-    document.getElementById("word-blanks").innerHTML = remainingAndSolvedLetters.join(" ");
-    //Clears the #wrong guesses from the previous round//
+    // //prints blanks in the #word-blanks at the start of the the game//
+    document.getElementById("word_blanks").innerHTML = remainingAndSolvedLetters.join(" ");
+    // //Clears the #wrong guesses from the previous round//
     document.getElementById("wrong").innerHTML = wrongGuesses.join(" ");
 }
 
@@ -122,6 +123,6 @@ document.onkeyup = function(event) {
     //Runs the code to check for correct guesses
     checkLetters(userGuess);
     //Run the code that ends each round//
-    roundComplete();
+    completeGame();
 };
 
